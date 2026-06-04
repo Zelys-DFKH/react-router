@@ -13,6 +13,7 @@ We manage release notes in this file instead of the paginated Github Releases Pa
   <summary>Table of Contents</summary>
 
 - [React Router Releases](#react-router-releases)
+  - [v7.17.1](#v7171)
   - [v7.17.0](#v7170)
   - [v7.16.0](#v7160)
     - [Stabilized `future.v8_trailingSlashAwareDataRequests`](#stabilized-futurev8_trailingslashawaredatarequests)
@@ -176,6 +177,20 @@ We manage release notes in this file instead of the paginated Github Releases Pa
   - [v6.0.0](#v600)
 
 </details>
+
+## v7.17.1
+
+Date: 2026-06-04
+
+### Patch Changes
+
+- `@react-router/dev` - Ignore external Vite server environments in Framework Mode build hooks ([#14883](https://github.com/remix-run/react-router/pull/14883))
+
+  When `future.v8_viteEnvironmentApi` is enabled, React Router previously treated any non-client Vite environment as its own server build. This caused issues with integrations like Nitro, where plugins can register additional environments.
+
+  Framework Mode build hooks now ignore external server environments and only process the app's own server build.
+
+**Full Changelog**: [`v7.17.0...v7.17.1`](https://github.com/remix-run/react-router/compare/react-router@7.17.0...react-router@7.17.1)
 
 ## v7.17.0
 

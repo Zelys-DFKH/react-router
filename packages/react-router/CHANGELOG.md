@@ -1,5 +1,11 @@
 # `react-router`
 
+## v7.17.1
+
+### Patch Changes
+
+- _No changes_
+
 ## v7.17.0
 
 ### Minor Changes
